@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #31abb1;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(40, 237, 201);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(62, 62, 241);
+    font-weight: bolder;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 18px    ;
+}
+
+.image-container{
+    display: flex;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+article{
+    padding: 10px;
+    box-shadow: 0 0 1px;
+}
+
+

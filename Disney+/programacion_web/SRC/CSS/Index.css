@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #05085b;
+
+}
+.navbar-contenido{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.logo-container{
+    flex: 1;
+}
+
+.logo-container .principal{
+    width: 180px;
+}
+
+.logo{ 
+  font-size: 30px;
+   color: white;
+}
+
+
+.menu-container{
+    flex: 6;
+ 
+}
+
+.menu-list{
+    display:flex;
+    list-style: none;
+
+}
+.fa-solid.fa-house{
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.fa-solid.fa-film{
+    margin-top: 4px;
+    margin-right: 15px;
+}
+.fa-solid.fa-tv{
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.fa-solid.fa-star{
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.fa-solid.fa-arrow-trend-up{
+    margin-top: 4px;
+    margin-right: 15px;
+}
+.menu-list-item{
+    margin-right: 31px;    
+    cursor: pointer;
+    font-size: 18px;
+    position: relative; 
+}
+
+
+.menu-list-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Altura del subrayado */
+    background-color: rgb(67, 86, 232); 
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease; 
+    opacity: 0;
+}
+.menu-list-item:hover::before {
+    width: 100%; 
+    opacity: 1; 
+}
+
+.menu-list-item.activate{
+    font-weight: bold;
+    
+}
+.perfil-container{
+   flex: 2;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.perfil-text-container{
+    margin: 0 20px;
+}
+
+.foto-perfil{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+  color: gold;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: #1e23a2;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color:#0c0f6c;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.left-menu-icon{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.container{
+   background-color: #0c0f6c;
+   min-height: calc(100vh - 50px);
+   color: white; 
+}
+
+.content-container{
+    margin-left: 50px;
+}
+
+.recomendaciones-content{
+    height: 50vh;
+    padding: 50px;
+}
+
+.recomendaciones-titulo{
+    width: 200px;
+   
+}
+
+
+.recomendaciones-descripcion{
+    width: 500px;
+    color: rgb(255, 255, 255);
+    margin: 1px 0;
+    font-weight: bold;
+    background-color: rgba(155, 142, 142, 0.5); 
+    padding: 20px;
+    font-size: 19px;
+    border-style:solid;
+    border-color: #000587;
+}
+
+.recomendaciones-descripcioon{
+    width: 500px;
+    color: rgb(255, 255, 255);
+    margin: 1px 0;
+    font-weight: bold;
+    background-color: rgba(155, 142, 142, 0.5); 
+    padding: 20px;
+    font-size: 19px;
+    border-style:solid;
+    border-color: #27c4e0;
+    margin-top: 240px;
+}
+
+
+.recomendaciones-button{
+    padding: 15px 20px;
+    border-radius: 13px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: #20abc4;
+    cursor: pointer;
+;
+}
+
+.peliculas-lista-container{
+    padding:0 20px;
+}
+
+.peliculas-lista-wrapper{
+    position: relative;
+    background-color:#05085b;
+}
+
+.peliculas-lista-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.peliculas-lista{
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+
+.peliculas-lista-item:hover .peliculas-lista-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.peliculas-lista-item:hover .peliculas-lista-item-titulo,
+.peliculas-lista-item:hover .peliculas-lista-item-desc,
+.peliculas-lista-item:hover .peliculas-lista-item-button{
+    opacity: 1;
+}
+
+.peliculas-lista-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+
+.peliculas-lista-item-titulo{
+    background-color: rgba(155, 142, 142, 0.5);
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.peliculas-lista-item-desc{
+    background-color: rgba(155, 142, 142, 0.5);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 200px; 
+    opacity: 0; 
+    transition: 1s all ease-in-out;
+}
+
+.peliculas-lista-item-button{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    background-color: rgb(81, 147, 239);
+    color: white;
+    z-index: 1;  
+
+    transition: 1s all ease-in-out;
+}
+
+
+
+.fa-solid.fa-chevron-right{
+    font-size: 120px;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    color: lightgrey;
+    opacity: .5;
+    cursor:pointer;
+}
+
+
+.container.active{background-color: rgb(126, 174, 230);
+}
+
+.peliculas-lista-item-titulo.active{
+    color: black;
+}
+
+.navbar.active{
+    background-color: rgb(126, 174, 230);
+    color: black;
+}
+
+.navbar-contenido.active{
+    background-color: rgb(126, 174, 230);
+    color: black;
+
+}
+
+.sidebar.active{
+    background-color:rgb(126, 174, 230);
+
+}
+
+.left-menu-icon.active{
+    color: white;
+}
+
+
+.toggle.active{
+    background-color: rgb(126, 174, 230);
+    transform: translate(-20px);
+
+}
+
+button{
+    padding: 17px;
+    background-color: rgb(99, 233, 213);
+    margin-top: 10px;
+ 
+}
+
+button:hover{
+    background-color: #599eff;
+}
+
+.recomendaciones-tituloo{
+    justify-content: center;
+    text-align: center;
+    float: right;
+}
+
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 500px;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.control-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

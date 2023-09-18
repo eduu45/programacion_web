@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="mx-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+</title>
+    <link rel="icon" href="./SRC/IMAGES/FaviconDisney.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./SRC/CSS/Index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+  <div class="navbar-contenido">
+ 
+    <div class="logo-container"> <h1 class="logo"><img class="principal" src="./SRC/IMAGES/Disney.png" alt=""></h1></div>
+ <div class="menu-container">
+    <ul class="menu-list">
+        <i class="fa-solid fa-house"></i>
+        <li class="menu-list-item active">Inicio</li>
+        <i class="fa-solid fa-film"></i>
+        <li class="menu-list-item">Películas</li>
+        <i class="fa-solid fa-tv"></i>
+        <li class="menu-list-item">Series</li>
+        <i class="fa-solid fa-star"></i>
+        <li class="menu-list-item">Populares</li>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <li class="menu-list-item">Tendencias</li>
+    </ul>
+ </div>
+ <div class="perfil-container">
+    <img class="foto-perfil" src="./SRC/IMAGES/fotoperfil.png" alt="">
+    <div class="perfil-text-container">
+        <span class="perfil-text">Perfil</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+     <div class="toggle">
+      <i class="fa-solid fa-moon toggle-icon"></i>
+      <i class="fa-solid fa-sun toggle-icon"></i>
+      <div class="toggle-ball"></div>
+     </div>
+ </div>
+
+ </div>
+   </div>
+
+    <div class="sidebar">
+      <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+      <i class="left-menu-icon fa-solid fa-bookmark"></i>
+      <i class="left-menu-icon fa-solid fa-gear"></i>
+      <i class="left-menu-icon fa-regular fa-copyright"></i>
+  </div>
+    
+  <div class="container">
+    <div class="content-container">
+     <div class="recomendaciones-content"
+     style="background: url(./SRC/IMAGES/recomendaciones.jpg), linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-blend-mode: multiply;">
+     
+      <img class="recomendaciones-titulo" src="./SRC/IMAGES/recomendaciones-titulo.png" alt="">
+      <p class="recomendaciones-descripcion">En el misterioso mundo oculto detrás de los armarios de los niños, los monstruos trabajan en la fábrica de sustos de Monsters, Inc., donde asustar a los niños humanos es la fuente principal de energía. Sin embargo, todo cambia cuando una niña humana llamada Boo se cuela en su mundo. Dos monstruos, Mike y Sulley, deben protegerla y descubrir que la risa de los niños puede ser aún más poderosa que sus temores.</p>
+        <button onclick = "mensaje()" class="recomendaciones-button">¡VER AHORA!</button> 
+    </div>
+       <div class="peliculas-lista-container">
+         <h1 class="Peliculas-lista-titulo">Recien Añadidos</h1>
+           <div class="peliculas-lista-wrapper">
+             <div class="peliculas-lista">
+              <div class="peliculas-lista-item">
+                <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula1.jfif" alt="">
+                <span class="peliculas-lista-item-titulo">Walle</span>
+                <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                 <button onclick="walle()" class="peliculas-lista-item-button">Reproducir</button>
+                 
+             </div>
+              <div class="peliculas-lista-item">
+                <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula2.jfif" alt="">
+                <span class="peliculas-lista-item-titulo">Dumbo</span>
+                <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                 <button onclick="dumbo()" class="peliculas-lista-item-button">Reproducir</button>
+              </div>
+              <div class="peliculas-lista-item">
+                <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula3.jfif" alt="">
+                <span class="peliculas-lista-item-titulo">Buscando a Nemo</span>
+                <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                 <button onclick="abrirNuevaVentana()" class="peliculas-lista-item-button">Reproducir</button>
+              </div>
+              <div class="peliculas-lista-item">
+                <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula4.jfif" alt="">
+                <span class="peliculas-lista-item-titulo">Frozen</span>
+                <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                 <button class="peliculas-lista-item-button">Reproducir</button>
+              </div>
+             </div>
+           
+            </div>
+       </div>
+
+       <div class="peliculas-lista-container">
+        <h1 class="Peliculas-lista-titulo">Proximamente</h1>
+          <div class="peliculas-lista-wrapper">
+            <div class="peliculas-lista">
+             <div class="peliculas-lista-item">
+               <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula5.jfif" alt="">
+               <span class="peliculas-lista-item-titulo">Enredados</span>
+               <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                <button onclick="walle()" class="peliculas-lista-item-button">Reproducir</button>
+                
+            </div>
+             <div class="peliculas-lista-item">
+               <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula6.jfif" alt="">
+               <span class="peliculas-lista-item-titulo">Ralph</span>
+               <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                <button onclick="dumbo()" class="peliculas-lista-item-button">Reproducir</button>
+             </div>
+             <div class="peliculas-lista-item">
+               <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula7.jfif" alt="">
+               <span class="peliculas-lista-item-titulo">Toy Story 5</span>
+               <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                <button onclick="abrirNuevaVentana()" class="peliculas-lista-item-button">Reproducir</button>
+             </div>
+             <div class="peliculas-lista-item">
+               <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula8.jfif" alt="">
+               <span class="peliculas-lista-item-titulo">Frozen</span>
+               <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+                <button class="peliculas-lista-item-button">Reproducir</button>
+             </div>
+            </div>
+           </div>
+      </div>
+  
+      <div class="recomendaciones-content"
+      style="background: url(./SRC/IMAGES/recomendaciones2.jpg), linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: multiply;">
+      
+       <img class="recomendaciones-tituloo" src="" alt="">
+       <p class="recomendaciones-descripcioon">Descubre a los personajes de la nueva serie de Disney+</p>
+         <button ><a href="./SRC/Personajes.html"> ¡VER AHORA! </a></button> 
+     </div>
+
+
+     <div class="peliculas-lista-container">
+      <h1 class="Peliculas-lista-titulo">Proximamente</h1>
+        <div class="peliculas-lista-wrapper">
+          <div class="peliculas-lista">
+           <div class="peliculas-lista-item">
+             <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula5.jfif" alt="">
+             <span class="peliculas-lista-item-titulo">Enredados</span>
+             <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+              <button onclick="walle()" class="peliculas-lista-item-button">Reproducir</button>
+              
+          </div>
+           <div class="peliculas-lista-item">
+             <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula6.jfif" alt="">
+             <span class="peliculas-lista-item-titulo">Ralph</span>
+             <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+              <button onclick="dumbo()" class="peliculas-lista-item-button">Reproducir</button>
+           </div>
+           <div class="peliculas-lista-item">
+             <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula7.jfif" alt="">
+             <span class="peliculas-lista-item-titulo">Toy Story 5</span>
+             <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+              <button onclick="abrirNuevaVentana()" class="peliculas-lista-item-button">Reproducir</button>
+           </div>
+           <div class="peliculas-lista-item">
+             <img class="peliculas-lista-item-img" src="./SRC/IMAGES/pelicula4.jfif" alt="">
+             <span class="peliculas-lista-item-titulo">Frozen</span>
+             <p class="peliculas-lista-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia nisi culpa?</p>
+              <button class="peliculas-lista-item-button">Reproducir</button>
+          
+              
+            </div>
+          
+          </div>
+
+         </div>
+    </div>
+
+
+  </div>
+ 
+  <div class="slider-container">
+    <div class="slider">
+        <div class="slide"><img src="./SRC/IMAGES/pelicula6.jfif" alt="Imagen 1"></div>
+        <div class="slide"><img src="./SRC/IMAGES/pelicula7.jfif" alt="Imagen 2"></div>
+        <div class="slide"><img src="./SRC/IMAGES/pelicula2.jfif" alt="Imagen 3"></div>
+    </div>
+    <button id="prevBtn" class="control-btn">Anterior</button>
+    <button id="nextBtn" class="control-btn">Siguiente</button>
+</div>
+</div>
+  <script src="./Script.js"></script>
+</body>
+</html>
